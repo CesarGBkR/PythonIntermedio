@@ -15,6 +15,17 @@ def run():
     odd = list(filter(lambda x: x%2 != 0, my_list))
     print(odd)
 
+#Crear una lista con los valores al cuadrado de una lista ya dada
+
+    #Solución con List comprehensions
+    # my_list2 =  [1,2,3,4,5]
+    # ood =  [i * i for i in my_list2]
+    # print(ood)
+
+    #Solución con map
+    my_list2 =  [1,2,3,4,5]
+    square = list(map(lambda x: x**2, my_list2))
+    print(square)
 
 if __name__ == '__main__':
     run()
